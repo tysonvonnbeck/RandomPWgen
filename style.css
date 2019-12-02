@@ -1,0 +1,40 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 25px;
+}
+
+.card {
+  margin: 50px;
+}
+
+.card-body {
+    flex: auto;
+    align-content: center;
+}
+
+textarea {
+    text-align: center;
+    width: 300px;  
+    height: 100px;
+    resize: none;
+    border-radius: 12px;
+    border: dashed lightgray;
+}
+
+#copy {
+    border-radius: 24px;
+}
+
+#generate {
+    border-radius: 24px;
+}
