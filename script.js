@@ -36,7 +36,7 @@ function copyToClipboard() {
     var copyText = document.getElementById("password");
     copyText.select();
     document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
+    alert("Copied text: " + copyText.value);
 }
 
 // Add event listener to generate button
