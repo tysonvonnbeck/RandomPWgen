@@ -55,20 +55,9 @@ textarea {
 
 form {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    /* justify-content: space-evenly; */
     padding: 20px;
     margin: auto 0;
     align-items: center;
-}
-
-.check1 {
-    display: flex;
-    justify-content: left;
-}
-
-.divider {
-    width:10px;
-    height:auto;
-    display:inline-block;
 }
