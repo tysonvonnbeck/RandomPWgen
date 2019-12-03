@@ -14,6 +14,8 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <!-- minimum width for mobile-->
+    <meta name=viewport content='width=500'>
   </head>
   <body>
     <header>
@@ -27,12 +29,8 @@
         <div class="card-body">
           <div class="row">
             <div class="col-sm-12" style="align-items: center">
-              <textarea
-                readonly
-                id="password"
-                placeholder="Your Secure Password"
-                aria-label="Generated Password"
-              ></textarea>
+              <!-- textarea -->
+              <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password" wrap="virtual"></textarea>
             </div>
           </div>
           <br />
@@ -56,7 +54,7 @@
           <!-- Settings -->
           <div class="row">
               <div class="col-sm-12">
-                <p>Password Criteria</p>
+                <p><h6>Password Criteria</h6></p>
                 <hr>
                 <p>Password length</p>
                 <div class="slidecontainer">
@@ -67,11 +65,11 @@
               </div>
               <!-- radiobuttons -->
               <form>
-                    <input type="checkbox" value="passUpperCase" checked="checked" id="upper">Uppercase
-                    <input type="checkbox" value="passLowerCase" checked="checked" id="lower">Lowercase 
+                    <input type="checkbox" checked="checked" id="upper">Uppercase
+                    <input type="checkbox" checked="checked" id="lower">Lowercase 
                     <br>
-                    <input type="checkbox" value="passLowercase" checked="checked" id="number">Numbers
-                    <input type="checkbox" value="passLowercase" checked="checked" id="special">Special Characters<br>
+                    <input type="checkbox" checked="checked" id="number">Numbers
+                    <input type="checkbox" checked="checked" id="special">Special Characters<br>
               </form>
             </div>
           <script src="script.js"></script>

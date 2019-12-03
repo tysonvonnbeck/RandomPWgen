@@ -30,6 +30,7 @@ textarea {
     resize: none;
     border-radius: 12px;
     border: dashed lightgray;
+    white-space: pre-wrap;
 }
 
 #copy {

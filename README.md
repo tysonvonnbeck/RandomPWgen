@@ -19,6 +19,8 @@ One of the following criteria MUST BE CHECKED or a password will not be created:
 * **Numbers** - select this option to include numbers.
 * **Special** - select this option to include special characters.
 
+    *note -  The use of Special Characters may cause line-breaks in the text-area when longer than 33 characters, but will still copy properly inline to the clipboard*
+
 **GENERATE PASSWORD** - 
 Once your criteria has been set, click the Generate Password button and a randomly generated password will be created in the text area.
 
