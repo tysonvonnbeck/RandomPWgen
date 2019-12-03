@@ -23,7 +23,6 @@ One of the following criteria MUST BE CHECKED or a password will not be created:
 Once your criteria has been set, click the Generate Password button and a randomly generated password will be created in the text area.
 
 ##### COPY TO CLIPBOARD
-Use the Copy to Clipboard button to copy your randomly generated password to your clipboard so that you can paste it elsewhere.
-(only works with macs and pcs. Does not work with traditional wooden clipboards)
+Use the Copy to Clipboard button to copy your randomly generated password to your clipboard so that you can paste it elsewhere for safe keeping.
 
 ![screenshot](/images/RPG.png)
