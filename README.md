@@ -10,7 +10,7 @@ To create a random password, set your password criteria and click the Generate P
 
 **Setting Your Criteria:**
 
-**Length** 
+**Length** - 
 Use the slider to adjust the length of your password. All passwords must be between 8 and 128 characters long. 8 is the default length.
 
 One of the following criteria MUST BE CHECKED or a password will not be created:
@@ -19,10 +19,11 @@ One of the following criteria MUST BE CHECKED or a password will not be created:
 * **Numbers** - select this option to include numbers.
 * **Special** - select this option to include special characters.
 
-##### GENERATE PASSWORD
+**GENERATE PASSWORD** - 
 Once your criteria has been set, click the Generate Password button and a randomly generated password will be created in the text area.
 
-##### COPY TO CLIPBOARD
+**COPY TO CLIPBOARD** - 
 Use the Copy to Clipboard button to copy your randomly generated password to your clipboard so that you can paste it elsewhere for safe keeping.
 
+##### SCREENSHOT
 ![screenshot](/images/RPG.png)
