@@ -8,16 +8,32 @@ var copyBtn = document.querySelector("#copy");
 function generatePassword() {
 
     //YOUR CODE HERE
-    var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    var string_length = 11;
+    var charOptions = {
+        upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+        lower: 'abcdefghijklmnopqrstuvwxyz',
+        number: '0123456789',
+        special: '!$%^&*()-=+[]{};#:@~,./<>?'
+    };
+    var chars = userOptions("",charOptions);
+    var string_length = slider.value;
     var randomstring = '';
     for (var i=0; i<string_length; i++) {
     var rnum = Math.floor(Math.random() * chars.length);
         randomstring += chars.substring(rnum,rnum+1);
     }
-
+    
     // alert("Huzzah!");
     return randomstring;
+}
+
+//Password length slider
+var slider = document.getElementById("myRange");
+var output = document.getElementById("output");
+output.innerHTML = slider.value;
+
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
 }
 
 // Write password to the #password input
@@ -38,8 +54,35 @@ function copyToClipboard() {
     document.execCommand("copy");
     alert("Copied text: " + copyText.value);
 }
+function userOptions(chars, charOptions) {
+    // console.log(document.getElementById("lower").checked);
+    var upperChecked = document.getElementById("upper").checked
+    var lowerChecked = document.getElementById("lower").checked
+    var numberChecked = document.getElementById("number").checked
+    var specialChecked = document.getElementById("special").checked
 
+    if (upperChecked) {
+        chars = chars + charOptions.upper
+    }
+    // console.log(chars);
+    
+    if (lowerChecked) {
+        chars = chars + charOptions.lower
+    }
+
+    if (numberChecked) {
+        chars = chars + charOptions.number
+    }
+
+    if (specialChecked) {
+        chars = chars + charOptions.special
+    }
+
+    return chars;
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+// generateBtn.addEventListener("click", );
+
 
 // BONUS EVENT LISTENER

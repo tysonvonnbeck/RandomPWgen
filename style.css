@@ -39,3 +39,22 @@ textarea {
 #generate {
     border-radius: 24px;
 }
+
+.slidecontainer {
+    width: 100%;
+}
+
+  .slider:hover {
+    opacity: 1;
+}
+
+  .slider::-webkit-slider-thumb {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}

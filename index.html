@@ -35,7 +35,7 @@
               ></textarea>
             </div>
           </div>
-          <br/>
+          <br />
           <div class="row">
             <div class="col-sm-6">
               <button id="generate" class="btn-danger btn-lg">
@@ -43,11 +43,37 @@
               </button>
             </div>
             <div class="col-sm-6">
-              <button id="copy" onclick="copyToClipboard()" class="btn-secondary btn-lg">
+              <button
+                id="copy"
+                onclick="copyToClipboard()"
+                class="btn-secondary btn-lg"
+              >
                 Copy to Clipboard
               </button>
             </div>
           </div>
+          <br>
+          <!-- Settings -->
+          <div class="row">
+              <div class="col-sm-12">
+                <p>Password Criteria</p>
+                <hr>
+                <p>Password length</p>
+                <div class="slidecontainer">
+                    <input type="range" min="8" max="120" value="8" class="slider" id="myRange">
+                    <p>Length: <span id="output"></span></p>
+                  </div>
+                  </div>
+              </div>
+              <!-- radiobuttons -->
+              <form>
+                    <input type="checkbox" value="passUpperCase" checked="checked" id="upper">Uppercase
+                    <input type="checkbox" value="passLowerCase" checked="checked" id="lower">Lowercase 
+                    <br>
+                    <input type="checkbox" value="passLowercase" checked="checked" id="number">Numbers
+                    <input type="checkbox" value="passLowercase" checked="checked" id="special">Special Characters<br>
+              </form>
+            </div>
           <script src="script.js"></script>
         </div>
       </div>
